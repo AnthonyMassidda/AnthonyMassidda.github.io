@@ -2281,7 +2281,7 @@ a img.social-icon {
 /* Hero section full viewport with background image */
 /* Header con sfondo */
 #header {
-    background-image: url('../images/background.jpg'); /* Sostituisci con la tua immagine */
+    background-image: url('../../images/background.jpg'); /* Sostituisci con la tua immagine */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2317,6 +2317,7 @@ a img.social-icon {
     background: rgba(0, 0, 0, 0.4); /* trasparenza */
     z-index: 1;
 }
+
 
 
 
