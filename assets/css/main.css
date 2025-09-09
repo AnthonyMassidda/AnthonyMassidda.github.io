@@ -2295,14 +2295,14 @@ a img.social-icon {
 }
 
 /* Ensure logo and icons stay above background */
-#header .logo,
-#header .icons {
+#headers .logo,
+#headers .icons {
     position: relative;
     z-index: 2;
 }
 
 /* Optional: overlay for better readability */
-#header::before {
+#headers::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
@@ -2310,5 +2310,6 @@ a img.social-icon {
     background: rgba(0,0,0,0.3); /* adjust darkness */
     z-index: 1;
 }
+
 
 
