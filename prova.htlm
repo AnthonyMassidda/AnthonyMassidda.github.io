@@ -1,0 +1,21 @@
+<!-- Header + Banner as one hero section -->
+<header id="hero">
+    <!-- Top bar with logo and social icons -->
+    <div class="top-bar">
+        <a href="index.html" class="logo"><strong>Homepage</strong> Anthony Massidda</a>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/anthony-massidda-b080a1a5/" target="_blank"><img src="images/linkedinlogo.png" class="social-icon"></a></li>
+            <li><a href="https://orcid.org/0009-0000-9943-6733" target="_blank"><img src="images/orcidlogo.svg" class="social-icon"></a></li>
+            <li><a href="https://inspirehep.net/authors/2769146/" target="_blank"><img src="images/inspirelogo.png" class="social-icon"></a></li>
+        </ul>
+    </div>
+
+    <!-- Banner content -->
+    <div class="content">
+        <h1>Hi,<br>I'm Anthony Massidda</h1>
+        <p>Theoretical Physics PhD student</p>
+        <ul class="actions">
+            <li><a href="#" class="button big">Learn More</a></li>
+        </ul>
+    </div>
+</header>
