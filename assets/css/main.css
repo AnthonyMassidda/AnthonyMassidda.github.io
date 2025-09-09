@@ -2292,7 +2292,7 @@ a img.social-icon {
 
 /* Example: Header background */
 #header {
-    background-image: url('../images/header-bg.jpg'); /* replace with your image */
+    background-image: url('../../images/background.jpg'); /* replace with your image */
 }
 
 /* Example: Banner background */
@@ -2319,3 +2319,4 @@ a img.social-icon {
     position: relative;
     z-index: 2; /* ensure content is above overlay */
 }
+
