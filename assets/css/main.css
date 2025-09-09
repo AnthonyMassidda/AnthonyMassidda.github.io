@@ -2293,7 +2293,7 @@ a img.social-icon {
 /* Banner con sfondo */
 #banner {
     position: relative;
-    background-image: url('../images/pic10.jpg'); /* Sostituisci con la tua immagine */
+    background-image: url('../../images/background.jpg'); /* Sostituisci con la tua immagine */
     background-size: cover;
     background-position: center;
     color: white;
@@ -2317,6 +2317,7 @@ a img.social-icon {
     background: rgba(0, 0, 0, 0.4); /* trasparenza */
     z-index: 1;
 }
+
 
 
 
