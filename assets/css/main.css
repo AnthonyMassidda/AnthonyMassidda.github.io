@@ -21,6 +21,7 @@ section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
+	background-color: #f0f8ff;
   font: inherit;
   vertical-align: baseline; }
 
@@ -2294,6 +2295,7 @@ a img.social-icon {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 
 
