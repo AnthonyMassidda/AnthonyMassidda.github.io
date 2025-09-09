@@ -2286,7 +2286,7 @@ a img.social-icon {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 40px 0;
 }
 
@@ -2317,6 +2317,7 @@ a img.social-icon {
     background: rgba(0, 0, 0, 0.4); /* trasparenza */
     z-index: 1;
 }
+
 
 
 
