@@ -2278,28 +2278,6 @@ a img.social-icon {
     vertical-align: middle; /* aligns nicely with other icons */
     height: 24px;           /* adjust size to match other icons */
 }
-/* Hero section full viewport with background image */
-/* Full-width top section */
-/* Make the header full-width and apply background */
-#headers {
-    width: 100%;
-    min-height: 150px; /* adjust height as needed */
-    background-image: url('../../images/background.jpg'); /* your image */
-    background-size: cover;       /* fill the whole header */
-    background-position: center;  /* center the image */
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem; /* optional spacing for logo */
-    color: #fff; /* optional text color */
-}
-
-/* Ensure logo and icons stay above background */
-#headers .logo,
-#headers .icons {
-    position: relative;
-    z-index: 2;
-}
 
 /* Optional: overlay for better readability */
 #headers::before {
@@ -2310,6 +2288,7 @@ a img.social-icon {
     background: rgba(0,0,0,0.3); /* adjust darkness */
     z-index: 1;
 }
+
 
 
 
