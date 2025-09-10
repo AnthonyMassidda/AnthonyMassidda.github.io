@@ -2337,8 +2337,14 @@ article.clickable:hover {
 
 /* optional hover feedback */
 .features article.clickable:hover {
-  background: rgba(0,0,0,0.03);
+  background: none;
 }
+.features article.clickable:hover h3,
+.features article.clickable:hover p,
+.features article.clickable:hover .icon {
+  color: red !important;
+}
+
 
 
 
