@@ -2311,6 +2311,35 @@ article.clickable:hover {
   cursor: pointer;
 }
 
+/* make article a positioning context */
+.features article.clickable { 
+  position: relative;
+  cursor: pointer; /* visual hint */
+}
+
+/* the invisible full-size link that captures clicks */
+.features article.clickable .article-link {
+  position: absolute;
+  inset: 0;                /* top:0; right:0; bottom:0; left:0; */
+  display: block;
+  z-index: 10;             /* on top so clicks hit it */
+  background: transparent; /* invisible */
+  text-decoration: none;
+  border: 0;
+}
+
+/* keep icon + content layout rules untouched and visible */
+.features article.clickable > .icon,
+.features article.clickable > .content {
+  position: relative;
+  z-index: 1; /* below the invisible link but still visible */
+}
+
+/* optional hover feedback */
+.features article.clickable:hover {
+  background: rgba(0,0,0,0.03);
+}
+
 
 
 
