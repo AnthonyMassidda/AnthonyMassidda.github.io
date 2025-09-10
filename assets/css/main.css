@@ -2296,6 +2296,20 @@ a img.social-icon {
   background-repeat: no-repeat;
 }
 
+/* Clickable ambient*/
+
+article.clickable a {
+  display: block;          /* let the link take full space */
+  color: inherit;          /* keep original text color */
+  text-decoration: none;   /* remove underline */
+  width: 100%;
+  height: 100%;
+}
+
+article.clickable:hover {
+  background: rgba(0,0,0,0.05); /* optional hover effect */
+  cursor: pointer;
+}
 
 
 
