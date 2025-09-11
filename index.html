@@ -121,62 +121,7 @@
 
 
 							
-							<!-- Search -->
-										<section id="search" class="alt">
-										  <form id="search-form">
-										 <input type="text" id="query" placeholder="Search" />
-										 </form>
-										<ul id="results"></ul>
-										</section>
-																							
-																																	<!-- Include Fuse.js -->
-																																	<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
-																							
-																																	<!-- Java Script for searching -->
-																																					<script>
-																																  // Load pages.json
-																																  fetch('pages.json')
-																																    .then(response => response.json())
-																																    .then(pages => {
-																																      
-																																      // Initialize Fuse.js
-																																      const fuse = new Fuse(pages, {
-																																        keys: ['title', 'keywords'], // fields to search
-																																        threshold: 0.3,              // 0 = strict, 1 = fuzzy
-																																        ignoreLocation: true
-																																      });
-																																
-																																      const form = document.getElementById("search-form");
-																																      const input = document.getElementById("query");
-																																      const results = document.getElementById("results");
-																																
-																																      // Listen for form submission
-																																      form.addEventListener("submit", function(e) {
-																																        e.preventDefault();
-																																        const query = input.value.trim();
-																																        results.innerHTML = '';
-																																
-																																        if (!query) return;
-																																
-																																        const searchResults = fuse.search(query);
-																																
-																																        if (searchResults.length === 0) {
-																																          results.innerHTML = "<li>No results found</li>";
-																																        } else {
-																																          searchResults.forEach(r => {
-																																            const li = document.createElement("li");
-																																            li.innerHTML = `<a href="${r.item.url}">${r.item.title}</a>`;
-																																            results.appendChild(li);
-																																          });
-																																        }
-																																      });
-																																    })
-																																    .catch(err => console.error('Error loading search index:', err));
-																																</script>
-
-
-
-
+							
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -288,6 +233,7 @@
 	</body>
 
 </html>
+
 
 
 
