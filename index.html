@@ -118,13 +118,56 @@
 					<div id="sidebar">
 						<div class="inner">
 
+
+
+							
 							<!-- Search -->
 								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+  								<form id="search-form">
+  								  <input type="text" id="query" placeholder="Search" />
+  								</form>
+ 								 <ul id="results"></ul>
+									</section>
+										<!-- Java Script for searching -->
+														<script>
+																  // Example data (you can auto-generate this or hardcode page links)
+																  const pages = [
+																    { title: "Homepage", url: "index.html", content: "Welcome to my site about physics and math." },
+																    { title: "About me", url: "about.html", content: "This site is about research, conferences, and publications." },
+																    { title: "Contact", url: "contact.html", content: "You can reach me at my email address." }
+																  ];
+																
+																  const form = document.getElementById("search-form");
+																  const input = document.getElementById("query");
+																  const results = document.getElementById("results");
+																
+																  form.addEventListener("submit", function (e) {
+																    e.preventDefault();
+																    const query = input.value.toLowerCase();
+																    results.innerHTML = "";
+																
+																    if (!query) return;
+																
+																    const matches = pages.filter(p =>
+																      p.title.toLowerCase().includes(query) ||
+																      p.content.toLowerCase().includes(query)
+																    );
+																
+																    if (matches.length === 0) {
+																      results.innerHTML = "<li>No results found</li>";
+																    } else {
+																      matches.forEach(p => {
+																        const li = document.createElement("li");
+																        li.innerHTML = `<a href="${p.url}">${p.title}</a>`;
+																        results.appendChild(li);
+																      });
+																    }
+																  });
+															</script>
 
+
+
+							
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -235,6 +278,7 @@
 	</body>
 
 </html>
+
 
 
 
