@@ -2347,15 +2347,35 @@ article.clickable:hover {
 
 /* Hidden text unless hover */
 .text-box {
-  max-height: 4.5em;      /* show ~3 lines (depends on font-size) */
-  overflow: hidden;       /* hide the rest */
-  transition: max-height 0.5s ease; /* smooth expansion */
-  cursor: pointer;        /* hint that it's interactive */
+  max-height: 4.5em;            /* ~3 lines */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: max-height 1.5s ease; /* slower & smoother */
 }
 
-.text-box:hover {
-  max-height: 1000px;     /* large enough to reveal all text */
+/* Add the "..." fade effect */
+.text-box::after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 20px;
+  background: linear-gradient(to right, transparent, white 50%);
+  /* Adjust "white" to your page background color */
 }
+
+/* Reveal full text on hover */
+.text-box:hover {
+  max-height: 1000px; /* big enough for full text */
+}
+
+/* Remove dots when expanded */
+.text-box:hover::after {
+  content: "";
+}
+
+
 
 
 
