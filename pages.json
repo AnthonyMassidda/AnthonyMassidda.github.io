@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Homepage",
+    "url": "index.html",
+    "keywords": "physics, math, research, blog"
+  },
+  {
+    "title": "About",
+    "url": "about.html",
+    "keywords": "bio, publications, conferences"
+  },
+  {
+    "title": "Contact",
+    "url": "contact.html",
+    "keywords": "email, location"
+  },
+  {
+    "title": "Research",
+    "url": "research.html",
+    "keywords": "scattering, amplitudes, quantum, intersection theory"
+  }
+]
