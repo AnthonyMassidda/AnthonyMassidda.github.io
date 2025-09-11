@@ -2393,13 +2393,14 @@ article.clickable:hover {
 .text-box2:hover {
   -webkit-line-clamp: unset;       /* remove clamp */
   max-height: 1000px;              /* animate expansion */
-  transition: max-height 0.8s ease; /* expand = faster */
+  transition: max-height 1.5s ease; /* expand = faster */
 }
 
 /* Remove gradient once expanded */
 .text-box2:hover::after {
   background: none;
 }
+
 
 
 
