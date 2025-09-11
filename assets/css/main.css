@@ -2345,6 +2345,18 @@ article.clickable:hover {
   color: red !important;
 }
 
+/* Hidden text unless hover */
+.text-box {
+  max-height: 4.5em;      /* show ~3 lines (depends on font-size) */
+  overflow: hidden;       /* hide the rest */
+  transition: max-height 0.5s ease; /* smooth expansion */
+  cursor: pointer;        /* hint that it's interactive */
+}
+
+.text-box:hover {
+  max-height: 1000px;     /* large enough to reveal all text */
+}
+
 
 
 
