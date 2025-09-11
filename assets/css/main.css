@@ -2347,33 +2347,21 @@ article.clickable:hover {
 
 /* Hidden text unless hover */
 .text-box {
-  max-height: 4.5em;            /* ~3 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;       /* show 3 lines */
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  position: relative;
   cursor: pointer;
-  transition: max-height 1.5s ease; /* slower & smoother */
+  transition: all 1s ease;   /* slower, smoother */
 }
 
-/* Add the "..." fade effect */
-.text-box::after {
-  content: "...";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-left: 20px;
-  background: linear-gradient(to right, transparent, white 50%);
-  /* Adjust "white" to your page background color */
-}
-
-/* Reveal full text on hover */
+/* Expand on hover */
 .text-box:hover {
-  max-height: 1000px; /* big enough for full text */
+  -webkit-line-clamp: unset;   /* show full text */
+  max-height: 1000px;          /* fallback for smooth transition */
 }
 
-/* Remove dots when expanded */
-.text-box:hover::after {
-  content: "";
-}
+
 
 
 
