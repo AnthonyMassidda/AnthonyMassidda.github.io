@@ -2402,6 +2402,13 @@ article.clickable:hover {
   background: none;
 }
 
+.posts article img {
+    width: 100%;       /* makes image fill article width */
+    height: 200px;     /* fixed height for all images */
+    object-fit: cover; /* crops images to fit without distortion */
+    display: block;
+}
+
 
 
 
