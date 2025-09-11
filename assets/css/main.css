@@ -2406,6 +2406,38 @@ article.clickable:hover {
 
 
 
+/* Hover area on the left edge */
+#sidebar-hover-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 10px;           /* Adjust sensitivity */
+  height: 100%;
+  z-index: 9999;
+}
+
+/* Make sidebar slide in/out on hover */
+#sidebar {
+  position: fixed;       /* Ensure sidebar is above content */
+  left: -26em;           /* Same as inactive margin */
+  transition: left 0.5s ease, box-shadow 0.5s ease; /* Keep your original transition */
+  z-index: 10000;        /* Above content */
+}
+
+/* Adjust width if needed for smaller screens */
+@media screen and (max-width: 1680px) {
+  #sidebar { left: -24em; }
+}
+@media screen and (max-width: 1280px) {
+  #sidebar { left: -24em; }
+}
+
+/* Show sidebar when hovering over trigger area or the sidebar itself */
+#sidebar-hover-area:hover + #sidebar,
+#sidebar:hover {
+  left: 0;
+}
+
 
 
 
