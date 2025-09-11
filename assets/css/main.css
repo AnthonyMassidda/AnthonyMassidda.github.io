@@ -2404,6 +2404,21 @@ article.clickable:hover {
 
 
 
+/* Hover area: small strip on the left */
+#sidebar-hover-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 10px;          /* hover sensitivity */
+  height: 100%;
+  z-index: 999;         /* above page content */
+}
+
+/* Show sidebar when hovering over the strip */
+#sidebar-hover-area:hover + #sidebar,
+#sidebar:hover {
+  left: 0;              /* slide in */
+}
 
 
 
