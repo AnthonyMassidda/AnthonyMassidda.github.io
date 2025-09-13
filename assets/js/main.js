@@ -252,11 +252,7 @@
 						$menu_openers.not($this).removeClass('active');
 						$this.toggleClass('active');
 					
-					// Sidebar toggle.
-$('#sidebar .toggle').on('click', function (event) {
-  event.preventDefault();
-  $body.toggleClass('is-sidebar-visible');
-});
+				
 
 
 					// Trigger resize (sidebar lock).
@@ -268,3 +264,4 @@ $('#sidebar .toggle').on('click', function (event) {
 
 
 })(jQuery);
+
