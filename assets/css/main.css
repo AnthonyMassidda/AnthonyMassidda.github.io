@@ -2410,6 +2410,10 @@ article.clickable:hover {
 }
 
 
+body.is-sidebar-visible #wrapper {
+  margin-left: 26em;
+}
+
 
 
 
