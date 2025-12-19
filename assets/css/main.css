@@ -2410,7 +2410,7 @@ article.clickable:hover {
 }
 
 .image.right.tall {
-  width: 320px;
+  width: 400px;
   height: 500px;
   overflow: hidden;
 }
@@ -2420,6 +2420,7 @@ article.clickable:hover {
   height: 100%;
   object-fit: cover;
 }
+
 
 
 
