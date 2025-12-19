@@ -2409,6 +2409,16 @@ article.clickable:hover {
     display: block;
 }
 
+.image.right.tall {
+  width: 320px;     /* fixed width */
+  max-width: none; /* override HTML5 UP */
+}
+
+.image.right.tall img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 
