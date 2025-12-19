@@ -2410,14 +2410,18 @@ article.clickable:hover {
 }
 
 .image.right.tall {
-  width: 320px;     /* fixed width */
-  max-width: none; /* override HTML5 UP */
+  width: 320px;
+  height: 500px;
+  overflow: hidden;
 }
 
 .image.right.tall img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
+
+
 
 
 
