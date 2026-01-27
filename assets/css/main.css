@@ -1222,7 +1222,7 @@ input[type="radio"] + label:before {
     border-radius: 0.375em;
     display: block; }
   .image.left, .image.right {
-    max-width: 40%; }
+    max-width: 50%; }
     .image.left img, .image.right img {
       width: 100%; }
   .image.left {
@@ -2416,6 +2416,18 @@ article.clickable:hover {
 }
 
 .image.right.tall img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image.left.tall {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.image.left.tall img {
   width: 120%;
   height: 100%;
   object-fit: cover;
