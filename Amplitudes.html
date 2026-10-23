@@ -34,11 +34,21 @@
 
 									<span class="image main"><img src="images/Scatter.png" alt="" /></span>
 
-									<p>Under Construction</p>
-									<hr class="major" />
+								<p>Every prediction we compare with collider data, such as a cross-section at the LHC, comes from a <em>scattering amplitude</em>. Beyond the simplest approximation, amplitudes are built from <em>Feynman integrals</em>: integrals over the momenta of virtual particles running in loops. At two or three loops a single process can require thousands of them, and evaluating them is one of the main bottlenecks of precision physics.</p>
 
-									<h2>Under Construction</h2>
-									<p>Under Construction</p>
+<p>Luckily, these integrals are not independent. Linear relations (integration-by-parts identities) reduce them to a small basis of <em>master integrals</em>, a bit like expressing any vector in terms of a basis. Two natural questions follow: <em>how many</em> master integrals are there, and <em>why</em> that number?</p>
+
+<hr class="major" />
+
+<h2>My approach: integrals as periods</h2>
+<p>I look at Feynman integrals as <strong>periods</strong>, that is, pairings between a differential form and an integration cycle. The number of master integrals then becomes the dimension of a (co)homology group, a question about the geometry hidden in the integral rather than about its explicit computation.</p>
+<p>Following recent ideas of Kontsevich and Soibelman on <em>exponential</em> integrals, I decompose these integrals into <strong>Lefschetz thimbles</strong>, the multidimensional analogue of steepest-descent contours. As the kinematic parameters vary, the thimbles can jump: this <strong>wall-crossing</strong> phenomenon (related to the Stokes phenomenon of asymptotic analysis) governs how integrals are analytically continued, and gives a sharp count of master integrals. I am also developing computational tools (Mathematica, Macaulay2) to turn these ideas into practical methods.</p>
+
+<h3>Related work</h3>
+<ul>
+	<li>R. Angius, S. L. Cacciatori, A. Massidda, <a href="https://arxiv.org/abs/2506.03252" target="_blank"><em>Wall crossing structure from quantum phenomena to Feynman integrals</em></a>, JHEP 01 (2026) 050.</li>
+	<li>A. Massidda, <a href="https://arxiv.org/abs/2603.29787" target="_blank"><em>Exponential Periods for Integrals in Physics</em></a>, PhD thesis (2026).</li>
+</ul>
 							</section>
 
 						</div>
